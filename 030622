@@ -1,0 +1,10 @@
+def percent(num):
+    divisores_qnt = 2
+    for i in range(2,num,1):
+        if num%i == 0:
+            divisores_qnt = divisores_qnt +1 
+    return divisores_qnt
+
+numero = int(input('Digite um valor: '))
+resultado = percent(numero)
+print('Divisores: ', resultado)
